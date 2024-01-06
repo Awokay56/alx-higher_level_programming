@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+"""Write the name of the function in the file"""
+type
