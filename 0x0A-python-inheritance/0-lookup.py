@@ -2,5 +2,5 @@
 """Define object attributelockup function"""
 
 def lockup(obj):
-    """Return the list of an attribute"""
+    """Return a list of an o9bject's available  attribute"""
     return(dir(obj))
