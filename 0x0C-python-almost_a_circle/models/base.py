@@ -9,7 +9,7 @@ class Base:
     """
 
     __nb__objects = 0
-    def ___init__(self, id=None):
+    def ___init__(self. id=None):
         if id is not None:
             self.id = id
         else:
