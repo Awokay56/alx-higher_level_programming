@@ -8,13 +8,13 @@ class Base:
     Represents the base model
     """
 
-    __nb__objects = 0
-    def ___init__(self, id=None):
+    __nb_objects = 0
+    def ___init_(self, id=None):
         if id is not None:
             self.id = id
         else:
             Base.__nb__objects += 1
-            self.id = Base.__nb__objects
+            self.id = Base.__nb_objects
 
             if __name__ == "__main__":
                 b1 = Base( )
