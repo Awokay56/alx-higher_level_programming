@@ -51,7 +51,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
-            raise ValueError("x must be > 0")
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -63,7 +63,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("y must be > 0")
+            raise ValueError("y must be >= 0")
         self.__y = value
 
         def area(self):
@@ -78,7 +78,5 @@ if __name__ == "__main__":
     print(r1.area())
 
     r2 = Rectangle(2, 10)
-    print(r2.area())
-
     r3 = Rectangle(8, 7, 0, 0, 12)
     print(r3.area())
